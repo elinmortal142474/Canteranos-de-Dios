@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>MAP Canteranos de Dios</title>
+  <link rel="shortcut icon" href="images/azul claro.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- LETRAS IMPORTADAS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" 
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" 
+        crossorigin=""/>
+
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>MAP Canteranos de Dios</h1>
+    <button class="menu-toggle" aria-label="Menú de navegación">☰</button>
+    <nav class="nav-menu">
+      <ul>
+        <img id="logo" src="images/logo.png" alt="logo">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#mision">Misión</a></li>
+        <li><a href="#vision">Visión</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main id="content">
+    <!-- Sección Home -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h2>Bienvenidos a Nuestra Iglesia</h2>
+        <p>Un lugar de fe, esperanza y amor.</p>
+        <a href="#galeria" class="btn">Conoce más</a>
+      </div>
+    </section>
+
+    <!-- Sección Versículo -->
+    <section id="versiculo">
+      <div class="versiculo-background"></div>
+      <h2>Versículos de la iglesia</h2>
+      <div class="versiculo-content-wrapper">
+        <div class="versiculo-content">
+          <h3>1 de Reyes 6:7</h3>
+          <p>Y cuando se edificó la casa, la fabricaron de piedras que traían ya acabadas, de tal manera que cuando la edificaban, ni martillos ni hachas se oyeron en la casa, ni ningún otro instrumento de hierro</p>
+        </div>
+        <div class="versiculo-content">
+          <h3>Isaías 51:1</h3>
+          <p>Oídme, los que seguís la justicia, los que buscáis a Jehová. Mirad a la piedra de donde fuistes cortados, y al hueco de la cantera de donde fuisteis arrancados.</p>
+        </div>
+      </div>
+      <div class="decorative-gem gem-1"></div>
+      <div class="decorative-gem gem-2"></div>
+      <div class="decorative-gem gem-3"></div>
+      <div class="decorative-gem gem-4"></div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="section">
+      <h2>Nuestra Historia</h2>
+      <p><strong>Orígenes Divinos (2023): El Ministerio Apostólico y Profético Canteranos de Dios (MAP) nació el 19 de mayo de 2023</strong> , no como fruto de estrategias humanas, sino como respuesta a un mandato celestial recibido por los pastores <strong>Giovanni Saavedra e Iliana de Saavedra Moreno.</strong> Tras años de servicio ministerial, ambos experimentaron un llamado simultáneo del Espíritu Santo: <strong>"No trabajen piedras pulidas; vayan a la cantera, rescaten las que aún están cubiertas de tierra y muéstrenles su valor en Mis manos" (Jeremías 1:5).</strong> </p>
+      <div class="about-content">
+        <h3>Nuestros Valores</h3>
+        <ul>
+          <li>Amor al prójimo</li>
+          <li>Fe</li>
+          <li>Servicio comunitario</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sección Misión -->
+    <section id="mision" class="section">
+      <h2>Misión</h2>
+      <ul>
+        <li>Extraer, transformar y enviar: Rescatamos vidas en bruto de la oscuridad, las tallamos con verdades apostólicas y fuego profético, y las liberamos como piedras preciosas que edifican el Reino de Dios en toda nación.</li>
+      </ul>
+    </section>
+
+    <!-- Sección Visión -->
+    <section id="vision" class="section">
+      <h2>Visión</h2>
+      <ul>
+        <li>Ser un centro espiritual transformador donde, a través del trabajo apostólico y profético, extraemos, moldeamos y pulimos vidas en bruto, convirtiéndolas en piedras preciosas de propósito divino, que brillen con la gloria de Dios y construyan un Reino eterno.</li>
+      </ul>
+    </section>
+
+    <!-- Sección Galería (Eventos de la iglesia) -->
+    <section id="galeria" class="section">
+      <div class="galeria">
+        <h1>Eventos de la iglesia</h1>
+        <div class="contenedor-imagenes">
+          <div class="imagen">
+            <img src="images/img-1.jpeg" alt="Imagen 1">
+            <div class="overlay"></div>
+          </div>
+          <div class="imagen">
+            <img src="images/img-2.jpeg" alt="Imagen 2">
+            <div class="overlay"></div>
+          </div>
+          <div class="imagen">
+            <img src="images/img-3.jpeg" alt="Imagen 3">
+            <div class="overlay"></div>
+          </div>
+          <div class="imagen">
+            <img src="images/img-4.jpeg" alt="Imagen 4">
+            <div class="overlay"></div>
+          </div>
+          <div class="imagen">
+            <img src="images/img-5.jpeg" alt="Imagen 5">
+            <div class="overlay"></div>
+          </div>
+          <div class="imagen">
+            <img src="images/img-6.jpeg" alt="Imagen 6">
+            <div class="overlay"></div>
+          </div>
+          <div class="imagen">
+            <img src="images/img-7.jpeg" alt="Imagen 7">
+            <div class="overlay"></div>
+          </div>
+          <div class="imagen">
+            <img src="images/img-8.jpeg" alt="Imagen 8">
+            <div class="overlay"></div>
+          </div>
+          <div class="imagen">
+            <img src="images/img-9.jpeg" alt="Imagen 9">
+            <div class="overlay"></div>
+          </div>
+          
+          <!-- BORRAR DESPUES Y AGREGAR NUEVAS IMAGENES -->
+          <div class="imagen">
+            <img src="images/img-10.jpeg" alt="Imagen 10">
+            <div class="overlay"></div>
+          </div>
+          <div class="imagen">
+            <img src="images/img-11.jpeg" alt="Imagen 11">
+            <div class="overlay"></div>
+          </div>
+          <div class="imagen">
+            <img src="images/img-12.jpeg" alt="Imagen 12">
+            <div class="overlay"></div>
+          </div>
+          <div class="imagen">
+            <img src="images/img-13.jpeg" alt="Imagen 13">
+            <div class="overlay"></div>
+          </div>
+          <div class="imagen">
+            <img src="images/img-14.jpeg" alt="Imagen 14">
+            <div class="overlay"></div>
+          </div>
+          <div class="imagen">
+            <img src="images/img-15.jpeg" alt="Imagen 15">
+            <div class="overlay"></div>
+          </div>
+          <div class="imagen">
+            <img src="images/img-16.jpeg" alt="Imagen 16">
+            <div class="overlay"></div>
+          </div>
+          <div class="imagen">
+            <img src="images/img-17.jpeg" alt="Imagen 17">
+            <div class="overlay"></div>
+          </div>
+          <div class="imagen">
+            <img src="images/img-18.jpeg" alt="Imagen 18">
+            <div class="overlay"></div>
+          </div>
+          <!-- Modal -->
+          <div id="modalEventos" class="modal-eventos">
+            <span class="cerrar-modal-eventos">&times;</span>
+            <img class="imagen-completa" alt="Imagen ampliada">
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-arrow prev" aria-label="Anterior" disabled>&lt;</button>
+          <button class="slider-arrow next" aria-label="Siguiente">&gt;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Videos -->
+    <section id="videos" class="section">
+      <div class="container">
+        <h1 class="videos-title">Vídeos de la Iglesia</h1>
+        <div class="video-container">
+          <div class="video-wrapper">
+            <video controls>
+              <source src="videos/video1.mp4" type="video/mp4">
+              Tu navegador no soporta la etiqueta de video.
+            </video>
+            <div class="video-title"></div>
+          </div>
+          <!-- Agrega más videos siguiendo este formato -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section">
+      <h2>Visítanos</h2>
+      <p>Estamos para servirte. Contáctanos a través de:</p>
+      <div class="contact-info">
+        <p>📞 (0412)-3838986</p>
+        <p>📧 mapcanteranosdedios@gmail.com</p>
+        <p>📍 Calle las gladiolas, Casa #4 A-17, Los rosales del manguito III</p>
+      </div>
+      <!-- Mapa de ubicación -->
+      <div id="map"></div>
+    </section>
+
+    <!-- Sección Autores o Alumnos -->
+    <section id="contacto" class="section">
+      <h2>Autores</h2>
+      <div class="contact-info">
+        <p>Ender Muñoz. C.I: 30.296.071</p>
+        <p>David Saavedra. CI: 30.614.111</p>
+        <p>Simón Cepeda. C.I: 30.719.055</p>
+        <p>Edwisson Rizzo. C.I: 30.397.465.                                                                                    
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Todos los Derechos Reservados A Canteranos de Dios.</p>
+  </footer>
+
+  <!-- Iconos Sociales -->
+  <div class="social-icons">
+    <a class="social-icon" href="https://www.facebook.com/share/18gg7mcZHu/" target="_blank">
+      <img src="images/icons8-facebook-nuevo.svg" alt="Facebook">
+    </a>
+    <a class="social-icon" href="https://www.instagram.com/canteranosdios?igsh=NW1tMzFxZHVzdG0w" target="_blank">
+      <img src="images/instagram (3).svg" alt="Instagram">
+    </a>
+    <a class="social-icon" href="https://www.youtube.com/@MAPCanteranosdeDios" target="_blank">
+      <img src="images/youtube.svg" alt="YouTube">
+    </a>
+    <a class="social-icon" href="https://www.tiktok.com/@canteranos.de.dios?_t=ZM-8uNclhswZpm&_r=1" target="_blank">
+      <img src="images/tiktok (1).svg" alt="TikTok">
+    </a>
+    <a class="social-icon" href="https://x.com/Canteranos01?t=2FWBFE08GixTm_b8VuCT7w&s=09" target="_blank">
+      <img src="images/twitter.svg" alt="X">
+    </a>
+    <a class="social-icon" href="https://whatsapp.com/channel/0029Vb9jyvS6GcG5y6hmnh1d" target="_blank">
+      <img src="images/icons8-whatsapp.svg" alt="WhatsApp">
+    </a>
+    <a class="social-icon" href="https://t.me/MAPCanteranosdeDios" target="_blank">
+      <img src="images/icons8-telegram-app.svg" alt="Telegram">
+    </a>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" 
+          integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" 
+          crossorigin=""></script>
+  <script>
+    // Código para el slider de imágenes en la galería
+    const contenedorImagenes = document.querySelector('.contenedor-imagenes');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    const imagenesPorPagina = 9; // Número de imágenes a mostrar por página
+    let paginaActual = 0;
+    
+    function mostrarImagenes() {
+      const imagenes = document.querySelectorAll('.imagen');
+      imagenes.forEach((imagen, index) => {
+        if (index >= paginaActual * imagenesPorPagina && index < (paginaActual + 1) * imagenesPorPagina) {
+          imagen.style.display = 'block';
+        } else {
+          imagen.style.display = 'none';
+        }
+      });
+    }
+    
+    function actualizarBotones() {
+      prevButton.disabled = paginaActual === 0;
+      nextButton.disabled = (paginaActual + 1) * imagenesPorPagina >= document.querySelectorAll('.imagen').length;
+    }
+    
+    prevButton.addEventListener('click', () => {
+      paginaActual--;
+      mostrarImagenes();
+      actualizarBotones();
+    });
+    
+    nextButton.addEventListener('click', () => {
+      paginaActual++;
+      mostrarImagenes();
+      actualizarBotones();
+    });
+    
+    // Inicializar slider
+    mostrarImagenes();
+    actualizarBotones();
+  </script>
+  <script src="js/response-img.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>
